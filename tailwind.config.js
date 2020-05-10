@@ -7,13 +7,17 @@
 module.exports = {
   theme: {
     minHeight: {
+      75: '75vh',
+      80: '80vh',
       90: '90vh'
     },
     minWidth: {
       25: '25%'
     },
     opacity: {
-      95: '0.95'
+      0: '0',
+      95: '0.95',
+      100: '1'
     },
     fontFamily: {
       sans: ['Lato', 'Helvetica', 'Arial', 'sans-serif']
