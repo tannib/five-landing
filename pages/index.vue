@@ -37,322 +37,15 @@
           <span class="text-4xl font-black">Cos'è</span>
           <span class="text-6xl font-black mb-8">THE5GAME?</span>
           <div
-            ref="playersList"
             class="slider relative flex items-center content-center"
           >
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--1.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--2.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--3.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--4.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--5.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--6.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--7.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--8.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--9.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--10.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--11.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--12.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--13.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--14.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--15.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--16.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--17.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--18.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--19.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--20.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--21.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--22.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--23.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--24.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--25.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--26.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--27.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--28.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--29.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--30.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--31.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--32.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--33.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--34.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--35.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--36.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--37.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--38.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--39.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--40.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--41.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--42.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--43.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--44.png"
-                alt=""
-              >
-            </div>
-
-            <div class="athlete invisible opacity-0 absolute top-0">
-              <img
-                src="~assets/images/player/single_athlete--45.png"
-                alt=""
-              >
+            <div class="athlete absolute top-0">
+              <transition name="fade" appear>
+                <img
+                  :key="currentIndex"
+                  :src="require(`~/assets/images/player/single_athlete--${currentIndex}.png`)"
+                >
+              </transition>
             </div>
           </div>
         </div>
@@ -373,23 +66,14 @@ export default Vue.extend({
   },
   data () {
     return {
-      currentIndex: (0 as number)
-    }
-  },
-  computed: {
-    playersList (): any {
-      return (this.$refs.playersList as any).getElementsByClassName('athlete')
+      currentIndex: (1 as number)
     }
   },
   mounted () {
-    timer(0, 4000).subscribe(() => this.setCurrentImg(Math.floor(Math.random() * ((this.playersList.length - 1) - 0 + 1)) + 0))
+    timer(0, 4000).subscribe(() => this.setCurrentImg(Math.floor(Math.random() * ((45 - 1) - 1 + 1)) + 1))
   },
   methods: {
     setCurrentImg (index: number) {
-      this.playersList[index].classList.remove(...['invisible', 'opacity-0'])
-      this.playersList[index].classList.add(...['visible', 'opacity-100'])
-      this.playersList[this.currentIndex].classList.remove(...['visible', 'opacity-100'])
-      this.playersList[this.currentIndex].classList.add(...['invisible', 'opacity-0'])
       this.currentIndex = index
     }
   }
@@ -402,7 +86,7 @@ export default Vue.extend({
   @apply bg-opacity-95
 .slider
   height: 330px
-  .athlete
-    transition: all 1s
-    @apply absolute
+.athlete
+  img
+    transition: all 1.5s ease
 </style>
