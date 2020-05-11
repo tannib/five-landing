@@ -3,7 +3,7 @@
     <section class="flex flex-col items-center min-h-90 bg-gradient bg-top bg-cover clipped w-full">
       <Header />
       <div class="flex flex-grow flex-row items-center container mx-auto z-10">
-        <div class="flex flex-row py-40 items-center">
+        <div class="flex flex-1 flex-row py-40 items-center">
           <div class="flex-1 mt-4">
             <h1 class="text-white text-4xl font-black mb-5">
               Il primo fanta quotidiano su <br>tutto il mondo dello sport.
@@ -356,7 +356,7 @@
             </div>
           </div>
         </div>
-        <div class="flex-1"></div>
+        <div class="flex-1" />
       </div>
     </section>
   </div>
