@@ -5,17 +5,17 @@
       <div class="flex flex-grow flex-row items-center container mx-auto z-10">
         <div class="flex flex-1 flex-row py-40 items-center">
           <div class="flex-1 mt-4">
-            <h1 class="text-white text-4xl font-black mb-5">
+            <h1 class="text-white text-4xl font-bold mb-5 leading-snug">
               Il primo fanta quotidiano su <br>tutto il mondo dello sport.
             </h1>
-            <h2 class="text-white text-xl font-light mb-10">
+            <h3 class="text-white text-base font-light mb-10">
               Schiera nella stessa formazione tutti i più forti atleti al <br>Mondo e gioca gratis per vincere premi ogni giorno.
-            </h2>
+            </h3>
             <div class="flex flex-1 content-between">
-              <button class="min-w-25 bg-green-600 hover:bg-green-700 text-white text-xl font-bold py-3 px-5 rounded">
+              <button class="min-w-25 bg-green-600 hover:bg-green text-white text-xl font-bold py-3 px-5 rounded">
                 <a class="signup">Registrati</a>
               </button>
-              <button class="min-w-25 bg-transparent hover:bg-white border border-white text-white hover:text-green-600 text-xl font-bold py-3 px-5 rounded ml-5">
+              <button class="min-w-25 bg-transparent hover:bg-white border border-white text-white hover:text-green text-xl font-bold py-3 px-5 rounded ml-5">
                 <a class="login">Login</a>
               </button>
             </div>
@@ -32,10 +32,14 @@
       </div>
     </section>
     <section class="flex flex-row items-center min-h-75 w-full">
-      <div class="flex flex-row items-center container mx-auto py-40">
+      <div class="flex flex-row container mx-auto py-40">
         <div class="flex flex-1 flex-col overflow-hidden">
-          <span class="text-4xl font-black">Cos'è</span>
-          <span class="text-6xl font-black mb-8">THE5GAME?</span>
+          <h3 class="text-4xl text-gray-800 font-normal mb-0">
+            Cos'è
+          </h3>
+          <h1 class="text-6xl font-black mb-16 leading-tight text-green-600 relative games-heading pb-5">
+            THE5GAME?
+          </h1>
           <div
             class="slider relative flex items-center content-center"
           >
@@ -49,7 +53,26 @@
             </div>
           </div>
         </div>
-        <div class="flex-1" />
+        <div class="flex flex-1 items-start content-start">
+          <div class="flex flex-1 flex-col p-8 h-full rounded">
+            <div class="mb-16">
+              <h2 class="text-4xl text-gray-800 font-bold mb-5 leading-snug">
+                The5Game è un fantasy game sportivo online.
+              </h2>
+              <p class="text-gray-600">
+                <span class="">Crea ogni giorno una selezione virtuale di cinque atleti i cui risultati dipenderanno da eventi sportivi reali.</span>
+                <span class="">&nbsp;</span>
+                <span class="">Hai a disposizione un budget per comporre la tua fanta-squadra e schierare tutti insieme i più forti sportivi del Mondo.</span>
+              </p>
+            </div>
+            <img
+              src="~assets/images/mockups/games.svg"
+              class="w-11/12 opacity-50"
+              alt="The5Game Games"
+              title="The5Game Games"
+            >
+          </div>
+        </div>
       </div>
     </section>
   </div>
@@ -89,4 +112,9 @@ export default Vue.extend({
 .athlete
   img
     transition: all 1.5s ease
+.games-heading
+  &::before
+    content: ''
+    height: 3px
+    @apply bg-gray-600 absolute left-0 bottom-0 w-1/5
 </style>

@@ -4,6 +4,7 @@
 ** Docs: https://tailwindcss.com/docs/configuration
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
+const { colors, opacity } = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     minHeight: {
@@ -15,6 +16,7 @@ module.exports = {
       25: '25%'
     },
     opacity: {
+      ...opacity,
       0: '0',
       95: '0.95',
       100: '1'
@@ -25,7 +27,7 @@ module.exports = {
     fontSize: {
       xs: '0.75rem',
       sm: '0.875rem',
-      base: '1rem',
+      base: '1.3125rem',
       lg: '1.125rem',
       xl: '1.25rem',
       '2xl': '1.5rem',
@@ -33,6 +35,11 @@ module.exports = {
       '4xl': '2.5rem',
       '5xl': '3rem',
       '6xl': '4rem'
+    },
+    colors: {
+      ...colors,
+      green: '#3aeaaa',
+      'green-600': '#34D699'
     }
   },
   variants: {},
