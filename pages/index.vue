@@ -68,8 +68,8 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-col items-center min-h-90 section2-bg bg-top bg-cover clipped-double w-full">
-      <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-40">
+    <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full">
+      <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-56">
         <h1 class="mb-16 text-white uppercase text-5xl text-center">
           Come si gioca <span class="normal-case">a The5Game</span>?
         </h1>
@@ -81,7 +81,7 @@
                 Registrazione
               </h3>
               <p class="text-lg text-center">
-                Crea un account inserendo solamente nome, cognome, user, mail e password.
+                <b class="text-dark-blue">Crea un account</b> inserendo solamente nome, cognome, user, mail e password.
               </p>
             </div>
           </div>
@@ -92,7 +92,7 @@
                 Formazione
               </h3>
               <p class="text-lg text-center">
-                Scegli i tuoi cinque atleti preferiti tra quelli a disposizione e schiera il tuo quintetto.
+                <b class="text-dark-blue">Scegli i tuoi cinque atleti preferiti</b> tra quelli a disposizione e schiera il tuo quintetto.
               </p>
             </div>
           </div>
@@ -104,7 +104,7 @@
               </h3>
               <p class="text-lg text-center">
                 In base alle tue scelte il computer genererà una formazione da sfidare.
-                Salva le formazioni per scendere in campo!
+                <b class="text-dark-blue">Salva le formazioni per scendere in campo!</b>
               </p>
             </div>
           </div>
@@ -115,7 +115,7 @@
                 Partita
               </h3>
               <p class="text-lg text-center">
-                Goditi gli eventi dei tuoi atleti e raccogli i punti delle loro prestazioni per vincere premi ogni giorno.
+                Goditi gli eventi dei tuoi atleti e raccogli i punti delle loro prestazioni per <b class="text-dark-blue">vincere premi ogni giorno.</b>
               </p>
             </div>
           </div>
