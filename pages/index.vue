@@ -44,12 +44,10 @@
             class="slider relative flex items-center content-center pl-6"
           >
             <div class="athlete absolute top-0">
-              <transition name="fade" appear>
-                <img
-                  :key="currentIndex"
-                  :src="require(`~/assets/images/player/single_athlete--${currentIndex}.png`)"
-                >
-              </transition>
+              <img
+                :key="currentIndex"
+                :src="require(`~/assets/images/player/single_athlete--${currentIndex}.png`)"
+              >
             </div>
           </div>
         </div>
@@ -65,6 +63,60 @@
               <h4 class="text-white text-2xl mt-8 font-light leading-relaxed">
                 Hai a disposizione un budget per comporre la tua fanta-squadra e schierare tutti insieme i più forti sportivi del Mondo.
               </h4>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="flex flex-col items-center min-h-90 section2-bg bg-top bg-cover clipped-double w-full">
+      <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-40">
+        <h1 class="mb-16 text-white uppercase text-5xl text-center">
+          Come si gioca <span class="normal-case">a The5Game</span>?
+        </h1>
+        <div class="steps rounded-lg overflow-hidden w-full flex flex-row items-center">
+          <div class="flex flex-1 bg-white relative clipped-x-right h-full items-center justify-center h-full -mr-2">
+            <div class="flex flex-col px-16 items-center step-card text-center">
+              <img src="~assets/images/icon_registration.png">
+              <h3 class="text-yellow-600 mb-5 text-3xl">
+                Registrazione
+              </h3>
+              <p class="text-lg text-center">
+                Crea un account inserendo solamente nome, cognome, user, mail e password.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-1 bg-white relative clipped-x-both h-full items-center justify-center h-full -mx-2">
+            <div class="flex flex-col px-16 items-center step-card text-center ml-2">
+              <img src="~assets/images/icon_lineup.png">
+              <h3 class="text-yellow-600 mb-5 text-3xl">
+                Formazione
+              </h3>
+              <p class="text-lg text-center">
+                Scegli i tuoi cinque atleti preferiti tra quelli a disposizione e schiera il tuo quintetto.
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-1 bg-white relative clipped-x-both h-full items-center justify-center h-full -mx-2">
+            <div class="flex flex-col px-16 items-center step-card text-center ml-2">
+              <img src="~assets/images/icon_save.png">
+              <h3 class="text-yellow-600 mb-5 text-3xl">
+                Salvataggio
+              </h3>
+              <p class="text-lg text-center">
+                In base alle tue scelte il computer genererà una formazione da sfidare.
+                Salva le formazioni per scendere in campo!
+              </p>
+            </div>
+          </div>
+          <div class="flex flex-1 bg-white relative clipped-x-left h-full items-center justify-center h-full -ml-2">
+            <div class="flex flex-col px-16 items-center step-card text-center ml-2">
+              <img class="w-1/5 h-auto" src="~assets/images/icon_match.png">
+              <h3 class="text-yellow-600 mb-5 text-3xl">
+                Partita
+              </h3>
+              <p class="text-lg text-center">
+                Goditi gli eventi dei tuoi atleti e raccogli i punti delle loro prestazioni per vincere premi ogni giorno.
+              </p>
             </div>
           </div>
         </div>
@@ -120,4 +172,14 @@ export default Vue.extend({
     content: ''
     height: 3px
     @apply bg-green absolute left-0 bottom-0 w-1/5
+.section2-bg
+  background: linear-gradient(to right, #2980b9, #011458)
+.steps
+  height: 25rem
+  filter: drop-shadow(0 1.5rem 5rem black)
+  .step-card
+    min-height: 70%
+    @apply absolute
+  img
+    @apply w-20 mb-3
 </style>
