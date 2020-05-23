@@ -34,14 +34,14 @@
     <section class="flex flex-row items-center min-h-75 w-full">
       <div class="flex flex-row container mx-auto py-40">
         <div class="flex flex-1 flex-col overflow-hidden">
-          <h3 class="text-4xl text-gray-800 font-normal mb-0">
+          <h3 class="text-4xl text-green-light font-normal mb-0">
             Cos'è
           </h3>
           <h1 class="text-6xl font-black mb-16 leading-tight text-green-600 relative games-heading pb-5">
             THE5GAME?
           </h1>
           <div
-            class="slider relative flex items-center content-center"
+            class="slider relative flex items-center content-center pl-6"
           >
             <div class="athlete absolute top-0">
               <transition name="fade" appear>
@@ -54,23 +54,18 @@
           </div>
         </div>
         <div class="flex flex-1 items-start content-start">
-          <div class="flex flex-1 flex-col p-8 h-full rounded">
+          <div class="bg-gradiend-green flex flex-1 flex-col p-8 h-full rounded">
             <div class="mb-16">
-              <h2 class="text-4xl text-gray-800 font-bold mb-5 leading-snug">
+              <h2 class="text-4xl text-white font-medium mb-5 leading-snug mb-8">
                 The5Game è un fantasy game sportivo online.
               </h2>
-              <p class="text-gray-600">
-                <span class="">Crea ogni giorno una selezione virtuale di cinque atleti i cui risultati dipenderanno da eventi sportivi reali.</span>
-                <span class="">&nbsp;</span>
-                <span class="">Hai a disposizione un budget per comporre la tua fanta-squadra e schierare tutti insieme i più forti sportivi del Mondo.</span>
-              </p>
+              <h4 class="text-white text-2xl font-light has-divider leading-relaxed relative pb-8">
+                Crea ogni giorno una selezione virtuale di cinque atleti i cui risultati dipenderanno da eventi sportivi reali.
+              </h4>
+              <h4 class="text-white text-2xl mt-8 font-light leading-relaxed">
+                Hai a disposizione un budget per comporre la tua fanta-squadra e schierare tutti insieme i più forti sportivi del Mondo.
+              </h4>
             </div>
-            <img
-              src="~assets/images/mockups/games.svg"
-              class="w-11/12 opacity-50"
-              alt="The5Game Games"
-              title="The5Game Games"
-            >
           </div>
         </div>
       </div>
@@ -107,14 +102,22 @@ export default Vue.extend({
 .bg-gradient
   background-image: linear-gradient(-115deg, rgba(41, 128, 185, 0.95) 0%, rgba(1, 20, 88, 0.95) 80%)
   @apply bg-opacity-95
+.bg-gradiend-green
+  background: linear-gradient(#7ed56f, #28b485)
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15)
 .slider
   height: 330px
 .athlete
   img
     transition: all 1.5s ease
+.has-divider
+  &::before
+    content: ''
+    height: 3px
+    @apply bg-white absolute left-0 bottom-0 w-1/5
 .games-heading
   &::before
     content: ''
     height: 3px
-    @apply bg-gray-600 absolute left-0 bottom-0 w-1/5
+    @apply bg-green absolute left-0 bottom-0 w-1/5
 </style>
