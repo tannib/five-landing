@@ -41,7 +41,7 @@
             THE5GAME?
           </h1>
           <div
-            class="slider relative flex items-center content-center pl-6"
+            class="slider relative flex items-center content-center pl-6 -mb-6"
           >
             <div class="athlete absolute top-0">
               <img
@@ -122,6 +122,77 @@
         </div>
       </div>
     </section>
+    <section class="flex flex-row items-center min-h-75 w-full">
+      <div class="flex flex-col container mx-auto py-40">
+        <div class="flex flex-1 flex-row items-baseline justify-center mb-16">
+          <h1 class="text-6xl font-black leading-tight text-green-600 relative pb-5">
+            Gli sport
+          </h1>
+          <h3 class="text-4xl text-green-light font-normal mb-0">
+            &nbsp;in the5Game
+          </h3>
+        </div>
+        <div class="flex flex-1 flex-row items-start justify-between">
+          <div class="flex flex-1 flex-row items-start justify-between">
+            <div class="flex flex-1 flex-col text-center">
+              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto calcio-gradient shadow-custom overflow-hidden mb-10">
+                <img class="" src="~assets/images/icons/calcio.png">
+              </div>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Serie A & Liga</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Premier &  Bundesliga</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Eredivise & Ligue 1</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Champions & Europa League</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Europeo & Modiali</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Amichevoli & Qualificazioni</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Copa Libertadores</span>
+              <span class="py-2 uppercase text-sm">Coppe & Supercoppe</span>
+            </div>
+            <div class="flex flex-1 flex-col text-center mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto basket-gradient shadow-custom overflow-hidden mb-10">
+                <img class="" src="~assets/images/icons/basket.png">
+              </div>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">NBA REGULAR SEASON</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">NBA PLAYOFF</span>
+              <span class="py-2 uppercase text-sm">NBA FINALS</span>
+            </div>
+            <div class="flex flex-1 flex-col text-center mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto football-gradient shadow-custom overflow-hidden mb-10">
+                <img class="" src="~assets/images/icons/nfl.png">
+              </div>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">NFL REGULAR SEASON</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">NFL PLAYOFF</span>
+              <span class="py-2 uppercase text-sm">SUPER BOWL</span>
+            </div>
+            <div class="flex flex-1 flex-col text-center mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto tennis-gradient shadow-custom overflow-hidden mb-10">
+                <img class="" src="~assets/images/icons/tennis.png">
+              </div>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">GRANDI SLAM ATP</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">MASTER 1000 ATP</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">ATP 500 & 250</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">ATP FINALS</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">COPPA DAVIS</span>
+              <span class="py-2 uppercase text-sm">NEXT GEN</span>
+            </div>
+            <div class="flex flex-1 flex-col text-center mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto motori-gradient shadow-custom overflow-hidden mb-10">
+                <img class="" src="~assets/images/icons/motori.png">
+              </div>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">FORMULA 1</span>
+              <span class="py-2 uppercase text-sm">MOTOGP</span>
+            </div>
+            <div class="flex flex-1 flex-col text-center">
+              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto baseball-gradient shadow-custom overflow-hidden mb-10">
+                <img class="" src="~assets/images/icons/calcio.png">
+              </div>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">MLB REGULAR SEASON</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">MLB PLAYOFF</span>
+              <span class="py-2 uppercase text-sm">WORLD SERIES</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -182,4 +253,20 @@ export default Vue.extend({
     @apply absolute
   img
     @apply w-20 mb-3
+.calcio-gradient
+  background: radial-gradient(#2ed099, #196e51)
+.basket-gradient
+  background: radial-gradient(#f68658, #cc440b)
+.football-gradient
+  background: radial-gradient(#2ed099, #196e51)
+.tennis-gradient
+  background: radial-gradient(#82a9d7, #33649e)
+.motori-gradient
+  background: radial-gradient(#555 60%, #111)
+.baseball-gradient
+  background: radial-gradient(#ff3e5a 50%, #b5001a)
+.shadow-custom
+  box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3)
+.rounded-xl
+  border-radius: 1.5rem
 </style>
