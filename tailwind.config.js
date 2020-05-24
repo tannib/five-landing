@@ -49,6 +49,9 @@ module.exports = {
       'dark-blue': '#242840'
     }
   },
+  corePlugins: {
+    outline: false
+  },
   variants: {},
   plugins: []
 }

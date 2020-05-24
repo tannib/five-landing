@@ -1,0 +1,46 @@
+.navigation
+  .navigation__button 
+    background-color: #196e51
+    height: 5rem
+    width: 5rem
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+    z-index: 2000
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
+    text-align: center
+    cursor: pointer
+    .navigation__icon
+      position: relative
+      width: 2.2rem
+      height: 0.125rem
+      background-color: #fff
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-top: .6rem
+      &::before, 
+      &::after 
+        width: 2.2rem
+        height: 0.125rem
+        background-color: #fff
+        display: inline-block
+        content: ""
+        position: absolute
+        left: 0
+        transition: all .2s
+      &::before
+        top: -.7rem
+      &::after
+        top: .7rem
+  .navigation__container
+    content: ""
+    height: 7rem
+    width: 7rem
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+    position: absolute
+    border-radius: 1rem
+    top: .8rem
+    right: -1rem
+    background-image: radial-gradient(#28b485, #7ed56f)
+    z-index: 1000
+    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1)
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)

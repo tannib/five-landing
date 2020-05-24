@@ -1,5 +1,6 @@
 <template>
   <div class="flex flex-1 flex-col">
+    <Menu />
     <section class="flex flex-col items-center min-h-90 bg-gradient bg-top bg-cover clipped w-full">
       <Header />
       <div class="flex flex-grow flex-row items-center container mx-auto z-10">
@@ -267,10 +268,12 @@
 import Vue from 'vue'
 import { timer } from 'rxjs'
 import Header from '~/components/header/Header.vue'
+import Menu from '~/components/menu/Menu.vue'
 
 export default Vue.extend({
   components: {
-    Header
+    Header,
+    Menu
   },
   data () {
     return {
@@ -289,6 +292,8 @@ export default Vue.extend({
 </script>
 
 <style lang="sass" scoped>
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap')
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;0,900;1,400&display=swap')
 .bg-gradient
   background-image: linear-gradient(-115deg, rgba(41, 128, 185, 0.95) 0%, rgba(1, 20, 88, 0.95) 80%)
   @apply bg-opacity-95
