@@ -193,6 +193,73 @@
         </div>
       </div>
     </section>
+    <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full">
+      <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-56">
+        <div class="flex flex-col">
+          <h1 class="text-4xl text-white leading-none">
+            THE5MOST
+          </h1>
+          <h1 class="mb-24 faq-heading text-6xl text-center leading-none">
+            Frequently Asked Questions
+          </h1>
+        </div>
+        <div class="w-full flex flex-row items-start justify-between mb-16">
+          <div class="p-10 bg-white rounded-lg card-shadow">
+            <h3 class="uppercase mb-3 font-bold text-dark-blue">
+              è gratuito giocare a the5game?
+            </h3>
+            <p class="m-0 text-md text-gray-800">
+              Sì, The5Game è gratis e lo sarà sempre.
+              Per migliorare l'esperienza di gioco sono previsti dei pacchetti premium, ma le funzionalità e le opportunità di vittoria sono le stesse anche in modalità gratuita.
+            </p>
+          </div>
+          <div class="p-10 bg-white rounded-lg card-shadow mx-24">
+            <h3 class="uppercase mb-3 font-bold text-dark-blue">
+              COME SI GIOCA A THE5GAME?
+            </h3>
+            <p class="m-0 text-md text-gray-800">
+              Crea ogni giorno una formazione composta da cinque atleti scegliendo tra tutti quelli disponibili.
+              Gli atleti a disposizione variano di giorno in giorno perchè è possibile schierare solamente quelli che scenderanno in campo o in pista quel giorno.
+            </p>
+          </div>
+          <div class="p-10 bg-white rounded-lg card-shadow">
+            <h3 class="uppercase mb-3 font-bold text-dark-blue">
+              COME POSSO COMPORRE LA MIA FORMAZIONE?
+            </h3>
+            <p class="m-0 text-md text-gray-800">
+              Nella scelta dei tuoi cinque atleti hai l'assoluta libertà di scelta, nel rispetto del budget predefinito.
+              Puoi mischiare cinque sport differenti come puoi scegliere semplicemente cinque atleti della tua squadra preferita.
+            </p>
+          </div>
+        </div>
+        <div class="w-full flex flex-row items-start justify-between mb-24">
+          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 mr-8">
+            <h3 class="uppercase mb-3 font-bold text-dark-blue">
+              COME SI VINCONO I PREMI?
+            </h3>
+            <p class="m-0 text-md text-gray-800">
+              In The5Game puoi vincere ogni giorno.
+              Sono infatti presenti due differenti competizioni: una giornaliera e una settimanale.
+              L'utente che con i risultati dei suoi quintetti sarà primo in classifica al termine di ogni competizione si porterà a caso l'intero premio.
+            </p>
+          </div>
+          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 ml-8">
+            <h3 class="uppercase mb-3 font-bold text-dark-blue">
+              IN COSA CONSISTONO I PREMI?
+            </h3>
+            <p class="m-0 text-md text-gray-800">
+              La nostra volontà è dare ai vincitori un premio che fosse il più simile possibile a soldi veri.
+              La legislazione italiana putroppo ci vieta di inviare soldi per cui l'alternativa legale più vicina al denaro sono buoni Amazon, che sono accumulabili e con cui è possibile comprare quello che si vuole.
+            </p>
+          </div>
+        </div>
+        <div>
+          <p class="text-white px-32 leading-relaxed">
+            Per tutti i tuoi ulteriori dubbi su cos'è The5Game, chi può partecipare, come si gioca e quando si vince, ti reindirizziamo <a class="font-bold">alla sezione FAQ</a> dove troverai tutte le risposte che cerchi oppure alla pagina <a class="font-bold">REGOLAMENTO</a>.
+          </p>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -267,6 +334,12 @@ export default Vue.extend({
   background: radial-gradient(#ff3e5a 50%, #b5001a)
 .shadow-custom
   box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.3)
+.card-shadow
+  box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.5)
 .rounded-xl
   border-radius: 1.5rem
+.faq-heading
+  background: -webkit-linear-gradient(#7ed56f, #28b485)
+  background-clip: text
+  -webkit-text-fill-color: transparent
 </style>
