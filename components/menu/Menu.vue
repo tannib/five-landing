@@ -15,27 +15,26 @@
       <div class="menu-toggle" @click="openMenu">
         <span class="menu-toggle_icon">&nbsp;</span>
       </div>
+      <nav class="navigation__nav">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a id="nav__list--signup" class="navigation__link mb-2">Registrati</a>
+          </li>
+          <li class="navigation__item">
+            <a id="nav__list--login" class="navigation__link mb-2">Login</a>
+          </li>
+          <li class="navigation__item">
+            <a id="nav__list--rules" class="navigation__link mb-2">Regolamento</a>
+          </li>
+          <li class="navigation__item">
+            <a id="nav__list--faq" class="navigation__link mb-2">FAQ</a>
+          </li>
+          <li class="navigation__item">
+            <a id="nav__list--contacts" class="navigation__link">Contatti</a>
+          </li>
+        </ul>
+      </nav>
     </div>
-
-    <nav class="navigation__nav">
-      <ul class="navigation__list">
-        <li class="navigation__item">
-          <a id="nav__list--signup" class="navigation__link">Registrati</a>
-        </li>
-        <li class="navigation__item">
-          <a id="nav__list--login" class="navigation__link">Login</a>
-        </li>
-        <li class="navigation__item">
-          <a id="nav__list--rules" class="navigation__link">Regolamento</a>
-        </li>
-        <li class="navigation__item">
-          <a id="nav__list--faq" class="navigation__link">FAQ</a>
-        </li>
-        <li class="navigation__item">
-          <a id="nav__list--contacts" class="navigation__link">Contatti</a>
-        </li>
-      </ul>
-    </nav>
   </div>
 </template>
 
