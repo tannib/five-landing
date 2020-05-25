@@ -1,46 +1,80 @@
-.navigation
-  .navigation__button 
-    background-color: #196e51
-    height: 5rem
-    width: 5rem
+
+.nav-menu
+  z-index: 1
+  .navigation__link 
+    display: none
+    font-size: 3rem
+    font-weight: 300
+    padding: 1rem 2rem
+    color: white
+    text-decoration: none
+    text-transform: uppercase
+    background-image: linear-gradient(105deg, transparent 0%, transparent 50%, white 50%)
+    background-size: 220%
+    transition: all .4s
+    cursor: pointer
+    span 
+        margin-right: 1.5rem
+        display: inline-block
+    &:hover,
+    &:active 
+        background-position: 100%
+        color: #196e51
+        transform: translateX(1rem)
+  .menu-backdrop
+    backdrop-filter: blur(10px)
+    background-color: rgba(0, 0, 0, 0.8)
+    z-index: -50
+    display: none
+  .expandable-pentagon
+    height: 6rem
+    width: 6rem
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
-    z-index: 2000
+    position: absolute
+    right: 0
+    top: 1rem
+    // border-radius: 1rem
+    background-image: radial-gradient(#28b485, #7ed56f)
+    z-index: 3
+    transition: all 0.4s ease-in-out
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
+    transform: scale(1)
+    transform-origin: center
+  .menu-toggle
+    background-color: #196e51
+    height: 4.5rem
+    width: 4.5rem
+    position: absolute
+    top: 1.75rem
+    right: .75rem
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+    z-index: 5
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
     text-align: center
     cursor: pointer
-    .navigation__icon
+    .menu-toggle_icon 
       position: relative
-      width: 2.2rem
-      height: 0.125rem
-      background-color: #fff
-      display: flex
-      align-items: center
-      justify-content: center
-      margin-top: .6rem
-      &::before, 
+      margin-top: 2.5rem
+      &,
+      &::before,
       &::after 
-        width: 2.2rem
-        height: 0.125rem
-        background-color: #fff
+        width: 2rem
+        height: 2px
+        background-color: white
         display: inline-block
+      &::before,
+      &::after 
         content: ""
         position: absolute
         left: 0
         transition: all .2s
-      &::before
-        top: -.7rem
-      &::after
-        top: .7rem
-  .navigation__container
-    content: ""
-    height: 7rem
-    width: 7rem
-    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
-    position: absolute
-    border-radius: 1rem
-    top: .8rem
-    right: -1rem
-    background-image: radial-gradient(#28b485, #7ed56f)
-    z-index: 1000
-    transition: transform 0.8s cubic-bezier(0.86, 0, 0.07, 1)
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
+      &::before  
+        top: -.6rem 
+      &::after  
+        top: .6rem 
+  &.open
+    .expandable-pentagon
+      transform: scale(20)
+    .menu-backdrop
+      z-index: 2
+      display: flex
