@@ -30,7 +30,6 @@
 </template>
 
 <script>
-import './Menu.sass'
 export default {
   data () {
     return {
@@ -54,3 +53,113 @@ export default {
   }
 }
 </script>
+<style lang="sass" scoped>
+.nav-menu
+  z-index: 1
+  .navigation__nav
+    position: absolute
+    right: 0
+    top: 50vh
+    transform: translateY(-50%) scale(0)
+    z-index: 50
+    transition: opacity 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
+    transition-delay: .2s
+    opacity: 0
+    .navigation__link
+      display: inline-block
+      font-size: 2.5rem
+      font-weight: 300
+      padding: .5rem 1rem
+      color: white
+      text-decoration: none
+      text-transform: uppercase
+      background-image: linear-gradient(105deg, transparent 0%, transparent 50%, white 50%)
+      background-size: 220%
+      transition: all .4s
+      cursor: pointer
+      span
+          margin-right: 1.5rem
+          display: inline-block
+      &:hover,
+      &:active
+          background-position: 100%
+          color: #196e51
+          transform: translateX(1rem)
+  .menu-backdrop
+    backdrop-filter: blur(10px)
+    background-color: rgba(0, 0, 0, 0.8)
+    z-index: -50
+    display: none
+  .expandable-pentagon
+    height: 6rem
+    width: 6rem
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+    position: absolute
+    right: 0
+    top: 2rem
+    background-image: radial-gradient(#28b485, #7ed56f)
+    z-index: 3
+    transition: all 0.4s ease-in-out
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
+    transform: scale(1)
+    transform-origin: center
+  .menu-toggle
+    background-color: #196e51
+    height: 4.5rem
+    width: 4.5rem
+    position: absolute
+    top: 2.75rem
+    right: .75rem
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
+    z-index: 5
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
+    text-align: center
+    cursor: pointer
+    &:hover
+      .menu-toggle_icon
+        &::before
+          top: -.75rem
+        &::after
+          top: .75rem
+    .menu-toggle_icon
+      position: relative
+      margin-top: 2.5rem
+      &,
+      &::before,
+      &::after
+        width: 2rem
+        height: 2px
+        background-color: white
+        display: inline-block
+      &::before,
+      &::after
+        content: ""
+        position: absolute
+        left: 0
+        transition: all .2s
+      &::before
+        top: -.6rem
+      &::after
+        top: .6rem
+  &.open
+    .expandable-pentagon
+      transform: scale(20)
+    .menu-backdrop
+      z-index: 2
+      display: flex
+    .navigation__nav
+      opacity: 1
+      transform: translateY(-50%) scale(1)
+      transition-delay: 0
+    .menu-toggle_icon
+      position: relative
+      margin-top: 2.5rem
+      &
+        background-color: transparent
+      &::after
+        transform: rotate(-135deg)
+        top: 0 !important
+      &::before
+        transform: rotate(135deg)
+        top: 0 !important
+</style>
