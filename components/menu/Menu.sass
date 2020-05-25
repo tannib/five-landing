@@ -41,8 +41,7 @@
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
     position: absolute
     right: 0
-    top: 1rem
-    // border-radius: 1rem
+    top: 2rem
     background-image: radial-gradient(#28b485, #7ed56f)
     z-index: 3
     transition: all 0.4s ease-in-out
@@ -54,13 +53,19 @@
     height: 4.5rem
     width: 4.5rem
     position: absolute
-    top: 1.75rem
+    top: 2.75rem
     right: .75rem
     clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%)
     z-index: 5
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
     text-align: center
     cursor: pointer
+    &:hover
+      .menu-toggle_icon
+        &::before 
+          top: -.75rem
+        &::after 
+          top: .75rem
     .menu-toggle_icon 
       position: relative
       margin-top: 2.5rem
@@ -98,7 +103,7 @@
         background-color: transparent
       &::after
         transform: rotate(-135deg)
-        top: 0
+        top: 0 !important
       &::before
         transform: rotate(135deg)
-        top: 0
+        top: 0 !important

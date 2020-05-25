@@ -1,15 +1,6 @@
 <template>
   <div class="nav-menu" :class="{ open: menuOpen }">
-    <!-- <button class="absolute navigation__button btn btn-transparent right-0 mt-8 flex justify-center items-center outline-none">
-      <span class="navigation__icon flex justify-center items-center">&nbsp;</span>
-    </button>
-
-    <div class="navigation__container">
-      <div class="navigation__background">
-        &nbsp;
-      </div>
-    </div> -->
-    <div class="menu-backdrop fixed left-0 top-0 w-screen h-screen" />
+    <div class="menu-backdrop fixed left-0 top-0 w-screen h-screen" @click="openMenu" />
     <div class="container fixed left-0 right-0 m-auto z-50">
       <div class="expandable-pentagon" />
       <div class="menu-toggle" @click="openMenu">
