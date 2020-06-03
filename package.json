@@ -18,7 +18,8 @@
     "now": "^19.0.1",
     "nuxt": "^2.0.0",
     "rxjs": "^6.5.5",
-    "sass-loader": "^8.0.2"
+    "sass-loader": "^8.0.2",
+    "vue-js-modal": "^2.0.0-rc.3"
   },
   "devDependencies": {
     "@nuxt/typescript-build": "^0.6.0",

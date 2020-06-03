@@ -13,10 +13,16 @@
               Schiera nella stessa formazione tutti i più forti atleti al <br>Mondo e gioca gratis per vincere premi ogni giorno.
             </h3>
             <div class="flex flex-1 content-between">
-              <button class="min-w-25 bg-green-600 hover:bg-green text-white text-xl font-bold py-3 px-5 rounded">
+              <button
+                class="min-w-25 bg-green-600 hover:bg-green text-white text-xl font-bold py-3 px-5 rounded"
+                @click="toggleModal('RegisterModal')"
+              >
                 <a class="signup">Registrati</a>
               </button>
-              <button class="min-w-25 bg-transparent hover:bg-white border border-white text-white hover:text-green text-xl font-bold py-3 px-5 rounded ml-5">
+              <button
+                class="min-w-25 bg-transparent hover:bg-white border border-white text-white hover:text-green text-xl font-bold py-3 px-5 rounded ml-5"
+                @click="toggleModal('LoginModal')"
+              >
                 <a class="login">Login</a>
               </button>
             </div>
@@ -41,9 +47,7 @@
           <h1 class="text-6xl font-black mb-16 leading-tight text-green-600 relative games-heading pb-5">
             THE5GAME?
           </h1>
-          <div
-            class="slider relative flex items-center content-center pl-6 -mb-6"
-          >
+          <div class="slider relative flex items-center content-center pl-6 -mb-6">
             <div class="athlete absolute top-0">
               <img
                 :key="currentIndex"
@@ -111,7 +115,10 @@
           </div>
           <div class="flex flex-1 bg-white relative clipped-x-left h-full items-center justify-center h-full -ml-2">
             <div class="flex flex-col px-16 items-center step-card text-center ml-2">
-              <img class="w-1/5 h-auto" src="~assets/images/icon_match.png">
+              <img
+                class="w-1/5 h-auto"
+                src="~assets/images/icon_match.png"
+              >
               <h3 class="text-yellow-600 mb-5 text-3xl">
                 Partita
               </h3>
@@ -137,10 +144,13 @@
           <div class="flex flex-1 flex-row items-start justify-between">
             <div class="flex flex-1 flex-col text-center">
               <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto calcio-gradient shadow-custom overflow-hidden mb-10">
-                <img class="" src="~assets/images/icons/calcio.png">
+                <img
+                  class=""
+                  src="~assets/images/icons/calcio.png"
+                >
               </div>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">Serie A & Liga</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Premier &  Bundesliga</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-sm">Premier & Bundesliga</span>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">Eredivise & Ligue 1</span>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">Champions & Europa League</span>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">Europeo & Modiali</span>
@@ -150,7 +160,10 @@
             </div>
             <div class="flex flex-1 flex-col text-center mx-4">
               <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto basket-gradient shadow-custom overflow-hidden mb-10">
-                <img class="" src="~assets/images/icons/basket.png">
+                <img
+                  class=""
+                  src="~assets/images/icons/basket.png"
+                >
               </div>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">NBA REGULAR SEASON</span>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">NBA PLAYOFF</span>
@@ -158,7 +171,10 @@
             </div>
             <div class="flex flex-1 flex-col text-center mx-4">
               <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto football-gradient shadow-custom overflow-hidden mb-10">
-                <img class="" src="~assets/images/icons/nfl.png">
+                <img
+                  class=""
+                  src="~assets/images/icons/nfl.png"
+                >
               </div>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">NFL REGULAR SEASON</span>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">NFL PLAYOFF</span>
@@ -166,7 +182,10 @@
             </div>
             <div class="flex flex-1 flex-col text-center mx-4">
               <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto tennis-gradient shadow-custom overflow-hidden mb-10">
-                <img class="" src="~assets/images/icons/tennis.png">
+                <img
+                  class=""
+                  src="~assets/images/icons/tennis.png"
+                >
               </div>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">GRANDI SLAM ATP</span>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">MASTER 1000 ATP</span>
@@ -177,14 +196,20 @@
             </div>
             <div class="flex flex-1 flex-col text-center mx-4">
               <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto motori-gradient shadow-custom overflow-hidden mb-10">
-                <img class="" src="~assets/images/icons/motori.png">
+                <img
+                  class=""
+                  src="~assets/images/icons/motori.png"
+                >
               </div>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">FORMULA 1</span>
               <span class="py-2 uppercase text-sm">MOTOGP</span>
             </div>
             <div class="flex flex-1 flex-col text-center">
               <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto baseball-gradient shadow-custom overflow-hidden mb-10">
-                <img class="" src="~assets/images/icons/calcio.png">
+                <img
+                  class=""
+                  src="~assets/images/icons/calcio.png"
+                >
               </div>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">MLB REGULAR SEASON</span>
               <span class="py-2 border-b border-gray-300 uppercase text-sm">MLB PLAYOFF</span>
@@ -261,6 +286,13 @@
         </div>
       </div>
     </section>
+    <Modal>
+      <component
+        :is="currentModal"
+        slot="modal-content"
+      />
+      <!-- <RegisterModal slot="modal-content" /> -->
+    </Modal>
   </div>
 </template>
 
@@ -269,15 +301,22 @@ import Vue from 'vue'
 import { timer } from 'rxjs'
 import Header from '~/components/header/Header.vue'
 import Menu from '~/components/menu/Menu.vue'
+import Modal from '~/components/modals/common.modal.vue'
+import RegisterModal from '~/components/modals/register.modal.vue'
+import LoginModal from '~/components/modals/login.modal.vue'
 
 export default Vue.extend({
   components: {
     Header,
-    Menu
+    Menu,
+    Modal,
+    RegisterModal,
+    LoginModal
   },
   data () {
     return {
-      currentIndex: (1 as number)
+      currentIndex: (1 as number),
+      currentModal: 'RegisterModal'
     }
   },
   mounted () {
@@ -286,6 +325,10 @@ export default Vue.extend({
   methods: {
     setCurrentImg (index: number) {
       this.currentIndex = index
+    },
+    toggleModal (modalType: string) {
+      this.currentModal = modalType
+      this.$store.commit('modal/openModal')
     }
   }
 })

@@ -4,7 +4,7 @@
 ** Docs: https://tailwindcss.com/docs/configuration
 ** Default: https://github.com/tailwindcss/tailwindcss/blob/master/stubs/defaultConfig.stub.js
 */
-const { colors, opacity, fontSize, minHeight, minWidth } = require('tailwindcss/defaultTheme')
+const { colors, opacity, fontSize, minHeight, minWidth, corePlugins } = require('tailwindcss/defaultTheme')
 module.exports = {
   theme: {
     minHeight: {
@@ -50,8 +50,7 @@ module.exports = {
     }
   },
   corePlugins: {
+    ...corePlugins,
     outline: false
-  },
-  variants: {},
-  plugins: []
+  }
 }
