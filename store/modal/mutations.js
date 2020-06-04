@@ -1,5 +1,5 @@
 export default {
-  openModal (state) {
-    state.modalOpen = !state.modalOpen
+  toggleModal (state, modalState) {
+    state.modal = modalState
   }
 }

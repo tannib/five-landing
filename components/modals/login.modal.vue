@@ -7,16 +7,27 @@
       <p class="text-md text-white font-light">
         Non hai ancora un'account?
       </p>
-      <span class="ml-2 text-md text-blue-800 font-normal underline">Registrati</span>
+      <span
+        class="ml-2 text-md text-blue font-bold cursor-pointer"
+        @click="toggleRegisterModal"
+      >Registrati!</span>
     </div>
     <div class="mt-5 text-left">
       <span class="text-lg text-white font-light">Continua con</span>
-      <div class="flex items-center content-between mt-1">
-        <button class="flex-1 min-w-25 bg-blue-600 hover:bg-blue text-white text-xl font-normal py-1 px-2 rounded">
-          <a class="signup">Facebook</a>
+      <div class="flex items-center content-between mt-2">
+        <button class="flex items-center justify-center flex-1 min-w-25 bg-facebook hover:bg-facebook text-white text-xl font-normal py-1 px-2 rounded">
+          <img
+            class="w-4"
+            src="~assets/images/icons/fb.png"
+          >
+          <a class="signup ml-3">Facebook</a>
         </button>
-        <button class="flex-1 ml-5 min-w-25 bg-white text-gray-900 text-xl font-normal py-1 px-2 rounded">
-          <a class="signup">Google</a>
+        <button class="flex items-center justify-center flex-1 ml-5 min-w-25 bg-white text-gray-900 text-xl font-normal py-1 px-2 rounded">
+          <img
+            class="w-4"
+            src="~assets/images/icons/google.png"
+          >
+          <a class="signup ml-3">Google</a>
         </button>
       </div>
     </div>
@@ -30,24 +41,34 @@
       class="mt-3"
     >
       <input
-        class="mb-3 appearance-none outline-none shadow-none rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-none"
+        class="mb-4 appearance-none outline-none shadow-none rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-none"
         type="text"
         placeholder="Username o Mail"
       >
       <input
-        class="mb-3 appearance-none outline-none shadow-none rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-none"
+        class="mb-4 appearance-none outline-none shadow-none rounded w-full py-2 px-3 text-gray-900 leading-tight focus:outline-none focus:shadow-none"
         type="text"
         placeholder="Password"
       >
+      <div class="mt-3 flex flex-1 justify-end items-center text-blue font-normal text-md">
+        Password dimenticata?
+      </div>
+      <button class="flex items-center font-bold mt-8 justify-center flex-1 min-w-25 bg-blue text-white text-xl font-normal p-2 w-full rounded-lg">
+        Accedi
+      </button>
     </form>
   </div>
 </template>
 
 <script>
 export default {
-
+  methods: {
+    toggleRegisterModal () {
+      this.$store.commit('modal/toggleModal', { type: 'RegisterModal', open: true })
+    }
+  }
 }
 </script>
 
-<style>
+<style lang="sass" scoped>
 </style>

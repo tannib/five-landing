@@ -1,5 +1,5 @@
 export default {
-  modalOpen (state) {
-    return state.modalOpen
+  modalState (state) {
+    return state.modal
   }
 }

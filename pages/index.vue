@@ -299,6 +299,7 @@
 <script lang="ts">
 import Vue from 'vue'
 import { timer } from 'rxjs'
+import { mapGetters } from 'vuex'
 import Header from '~/components/header/Header.vue'
 import Menu from '~/components/menu/Menu.vue'
 import Modal from '~/components/modals/common.modal.vue'
@@ -319,6 +320,16 @@ export default Vue.extend({
       currentModal: 'RegisterModal'
     }
   },
+  computed: {
+    ...mapGetters({
+      modalState: 'modal/modalState'
+    })
+  },
+  watch: {
+    modalState (newVal) {
+      this.currentModal = newVal.type
+    }
+  },
   mounted () {
     timer(0, 4000).subscribe(() => this.setCurrentImg(Math.floor(Math.random() * ((45 - 1) - 1 + 1)) + 1))
   },
@@ -328,7 +339,7 @@ export default Vue.extend({
     },
     toggleModal (modalType: string) {
       this.currentModal = modalType
-      this.$store.commit('modal/openModal')
+      this.$store.commit('modal/toggleModal', { type: this.currentModal, open: !this.modalState.open })
     }
   }
 })

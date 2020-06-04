@@ -5,7 +5,11 @@
     height="auto"
     @closed="onModalClose"
   >
-    <div class="modal-wrapper pb-5 pt-12 px-8 relative text-center">
+    <div class="modal-wrapper pb-8 pt-12 px-8 relative text-center">
+      <span
+        class="login__icon"
+        @click="hide"
+      >&nbsp;</span>
       <slot name="modal-content" />
     </div>
   </modal>
@@ -16,17 +20,17 @@ import { mapGetters } from 'vuex'
 export default {
   computed: {
     ...mapGetters({
-      modalOpen: 'modal/modalOpen'
+      modalState: 'modal/modalState'
     })
   },
   watch: {
-    modalOpen (newVal) {
-      newVal ? this.show() : this.hide()
+    modalState (newVal) {
+      newVal.open ? this.show() : this.hide()
     }
   },
   methods: {
     onModalClose () {
-      this.$store.commit('modal/openModal')
+      this.$store.commit('modal/toggleModal', { type: this.modalState.type, open: false })
     },
     show () {
       this.$modal.show('common-modal')
@@ -45,4 +49,31 @@ export default {
 .vm--overlay
   backdrop-filter: blur(10px)
   background-color: rgba(0, 0, 0, .8)
+.login
+  &__icon
+    position: absolute
+    top: 2rem
+    right: 2rem
+    cursor: pointer
+    &,
+    &::before,
+    &::after
+      width: 2rem
+      height: 2px
+      background-color: white
+      display: inline-block
+    &::before,
+    &::after
+      content: ""
+      position: absolute
+      left: 0
+      transition: all .2s
+    &
+      background-color: transparent
+    &::before
+      top: 0
+      transform: rotate(135deg)
+    &::after
+      top: 0
+      transform: rotate(-135deg)
 </style>

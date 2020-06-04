@@ -1,3 +1,6 @@
 export default () => ({
-  modalOpen: false
+  modal: {
+    type: 'RegisterModal',
+    open: false
+  }
 })

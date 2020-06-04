@@ -46,7 +46,9 @@ module.exports = {
       'green-light': '#7ed56f',
       'green-600': '#34D699',
       'yellow-600': '#dcc515',
-      'dark-blue': '#242840'
+      'dark-blue': '#242840',
+      blue: '#021b79',
+      facebook: '#4267B2'
     }
   },
   corePlugins: {
