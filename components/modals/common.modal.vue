@@ -44,7 +44,7 @@ export default {
 
 <style lang="sass">
 .vm--modal
-  border-radius: 1rem
+  border-radius: 1rem !important
   background-image: linear-gradient(#28b485, #7ed56f)
 .vm--overlay
   backdrop-filter: blur(10px)
