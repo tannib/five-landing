@@ -23,7 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'vue-js-modal/dist/styles.css',
+    // 'vue-js-modal/dist/styles.css',
     '@/assets/css/global.sass'
   ],
   /*
@@ -62,7 +62,7 @@ export default {
     /*
     ** You can extend webpack config here
     */
-    extend () {},
-    extractCSS: true
+    extend () {}
+    // extractCSS: true
   }
 }
