@@ -39,33 +39,34 @@
       </div>
     </section>
     <section class="flex flex-row items-center min-h-75 w-full">
-      <div class="flex flex-row container mx-auto py-40">
-        <div class="flex flex-1 flex-col overflow-hidden">
-          <h3 class="text-4xl text-green-light font-normal mb-0">
+      <div class="flex px-3 flex-col sm:flex-row container mx-auto py-40">
+        <div class="flex flex-1 flex-col overflow-hidden text-center sm:text-left mb-16 sm:mb-0">
+          <h3 class="text-3xl sm:text-4xl text-green-light font-normal mb-0">
             Cos'è
           </h3>
-          <h1 class="text-6xl font-black mb-16 leading-tight text-green-600 relative games-heading pb-5">
+          <h1 class="text-5xl sm:text-6xl font-black mb-10 sm:mb-16 leading-tight text-green-600 relative games-heading pb-0 sm:pb-5">
             THE5GAME?
           </h1>
-          <div class="slider relative flex items-center content-center pl-6 -mb-6">
-            <div class="athlete absolute top-0">
+          <div class="slider relative flex items-center content-center pl-0 sm:pl-6 mb-0 sm:-mb-6">
+            <div class="athlete absolute top-0 m-auto sm:m-0 left-0 right-0">
               <img
                 :key="currentIndex"
+                class="m-auto sm:m-0 w-9/12 sm:w-auto"
                 :src="require(`~/assets/images/player/single_athlete--${currentIndex}.png`)"
               >
             </div>
           </div>
         </div>
         <div class="flex flex-1 items-start content-start">
-          <div class="bg-gradiend-green flex flex-1 flex-col p-8 h-full rounded">
+          <div class="bg-gradiend-green flex flex-1 flex-col p-5 sm:p-8 h-full rounded">
             <div class="mb-16">
-              <h2 class="text-4xl text-white font-medium mb-5 leading-snug mb-8">
+              <h2 class="text-3xl sm:text-4xl text-white font-medium mb-5 leading-snug mb-8">
                 The5Game è un fantasy game sportivo online.
               </h2>
-              <h4 class="text-white text-2xl font-light has-divider leading-relaxed relative pb-8">
+              <h4 class="text-white text-xl sm:text-2xl font-light has-divider leading-relaxed relative pb-8">
                 Crea ogni giorno una selezione virtuale di cinque atleti i cui risultati dipenderanno da eventi sportivi reali.
               </h4>
-              <h4 class="text-white text-2xl mt-8 font-light leading-relaxed">
+              <h4 class="text-white text-xl sm:text-2xl mt-8 font-light leading-relaxed">
                 Hai a disposizione un budget per comporre la tua fanta-squadra e schierare tutti insieme i più forti sportivi del Mondo.
               </h4>
             </div>
@@ -74,12 +75,12 @@
       </div>
     </section>
     <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full">
-      <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-56">
-        <h1 class="mb-16 text-white uppercase text-5xl text-center">
+      <div class="flex px-3 sm:px-0 flex-col flex-grow flex-row items-center container mx-auto justify-center py-40 sm:py-56">
+        <h1 class="mb-16 text-white uppercase text-4xl sm:text-5xl text-center">
           Come si gioca <span class="normal-case">a The5Game</span>?
         </h1>
-        <div class="steps rounded-lg overflow-hidden w-full flex flex-row items-center">
-          <div class="flex flex-1 bg-white relative clipped-x-right h-full items-center justify-center h-full -mr-2">
+        <div class="steps rounded-lg overflow-hidden w-full flex flex-col sm:flex-row items-center">
+          <div class="flex flex-1 bg-white relative clipped-x-right w-full items-center justify-center h-auto sm:h-full py-10 mx-0 mb-5 sm:mb-0 sm:-mr-2">
             <div class="flex flex-col px-16 items-center step-card text-center">
               <img src="~assets/images/icon_registration.png">
               <h3 class="text-yellow-600 mb-5 text-3xl">
@@ -90,7 +91,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-1 bg-white relative clipped-x-both h-full items-center justify-center h-full -mx-2">
+          <div class="flex flex-1 bg-white relative clipped-x-both w-full items-center justify-center h-auto sm:h-full py-10 mx-0 mb-5 sm:mb-0 sm:-mx-2">
             <div class="flex flex-col px-16 items-center step-card text-center ml-2">
               <img src="~assets/images/icon_lineup.png">
               <h3 class="text-yellow-600 mb-5 text-3xl">
@@ -101,7 +102,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-1 bg-white relative clipped-x-both h-full items-center justify-center h-full -mx-2">
+          <div class="flex flex-1 bg-white relative clipped-x-both w-full items-center justify-center h-auto sm:h-full py-10 mx-0 mb-5 sm:mb-0 sm:-mx-2">
             <div class="flex flex-col px-16 items-center step-card text-center ml-2">
               <img src="~assets/images/icon_save.png">
               <h3 class="text-yellow-600 mb-5 text-3xl">
@@ -113,7 +114,7 @@
               </p>
             </div>
           </div>
-          <div class="flex flex-1 bg-white relative clipped-x-left h-full items-center justify-center h-full -ml-2">
+          <div class="flex flex-1 bg-white relative clipped-x-left w-full items-center justify-center h-auto sm:h-full py-10 mx-0 mb-0 sm:mb-0 sm:-ml-2">
             <div class="flex flex-col px-16 items-center step-card text-center ml-2">
               <img
                 class="w-1/5 h-auto"
@@ -130,97 +131,97 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-row items-center min-h-75 w-full">
-      <div class="flex flex-col container mx-auto py-40">
-        <div class="flex flex-1 flex-row items-baseline justify-center mb-16">
-          <h1 class="text-6xl font-black leading-tight text-green-600 relative pb-5">
+    <section class="flex flex-col sm:flex-row justify-center items-center min-h-75 w-full">
+      <div class="flex flex-col container mx-auto py-20 sm:py-40">
+        <div class="flex flex-1 flex-col sm:flex-row items-center sm:items-baseline justify-center mb-16">
+          <h1 class="text-6xl font-black leading-tight text-green-600 relative pb-0 sm:pb-5">
             Gli sport
           </h1>
           <h3 class="text-4xl text-green-light font-normal mb-0">
             &nbsp;in the5Game
           </h3>
         </div>
-        <div class="flex flex-1 flex-row items-start justify-between">
-          <div class="flex flex-1 flex-row items-start justify-between">
-            <div class="flex flex-1 flex-col text-center">
-              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto calcio-gradient shadow-custom overflow-hidden mb-10">
+        <div class="flex flex-1 flex-col sm:flex-row items-start justify-between">
+          <div class="flex flex-1 flex-row items-start justify-between flex-wrap">
+            <div class="box-game flex flex-1 flex-col text-center">
+              <div class="flex items-center justify-center p-5 rounded-xl w-20 h-20 sm:w-32 sm:h-32 m-auto calcio-gradient shadow-custom overflow-hidden mb-10">
                 <img
                   class=""
                   src="~assets/images/icons/calcio.png"
                 >
               </div>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Serie A & Liga</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Premier & Bundesliga</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Eredivise & Ligue 1</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Champions & Europa League</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Europeo & Modiali</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Amichevoli & Qualificazioni</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">Copa Libertadores</span>
-              <span class="py-2 uppercase text-sm">Coppe & Supercoppe</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">Serie A & Liga</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">Premier & Bundesliga</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">Eredivise & Ligue 1</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">Champions & Europa League</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">Europeo & Modiali</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">Amichevoli & Qualificazioni</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">Copa Libertadores</span>
+              <span class="py-2 uppercase text-tiny sm:text-sm">Coppe & Supercoppe</span>
             </div>
-            <div class="flex flex-1 flex-col text-center mx-4">
-              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto basket-gradient shadow-custom overflow-hidden mb-10">
+            <div class="box-game flex flex-1 flex-col text-center mx-0 sm:mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-20 h-20 sm:w-32 sm:h-32 m-auto basket-gradient shadow-custom overflow-hidden mb-10">
                 <img
                   class=""
                   src="~assets/images/icons/basket.png"
                 >
               </div>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">NBA REGULAR SEASON</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">NBA PLAYOFF</span>
-              <span class="py-2 uppercase text-sm">NBA FINALS</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">NBA REGULAR SEASON</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">NBA PLAYOFF</span>
+              <span class="py-2 uppercase text-tiny sm:text-sm">NBA FINALS</span>
             </div>
-            <div class="flex flex-1 flex-col text-center mx-4">
-              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto football-gradient shadow-custom overflow-hidden mb-10">
+            <div class="box-game flex flex-1 flex-col text-center mx-0 sm:mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-20 h-20 sm:w-32 sm:h-32 m-auto football-gradient shadow-custom overflow-hidden mb-10">
                 <img
                   class=""
                   src="~assets/images/icons/nfl.png"
                 >
               </div>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">NFL REGULAR SEASON</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">NFL PLAYOFF</span>
-              <span class="py-2 uppercase text-sm">SUPER BOWL</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">NFL REGULAR SEASON</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">NFL PLAYOFF</span>
+              <span class="py-2 uppercase text-tiny sm:text-sm">SUPER BOWL</span>
             </div>
-            <div class="flex flex-1 flex-col text-center mx-4">
-              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto tennis-gradient shadow-custom overflow-hidden mb-10">
+            <div class="box-game flex flex-1 flex-col text-center mx-0 sm:mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-20 h-20 sm:w-32 sm:h-32 m-auto tennis-gradient shadow-custom overflow-hidden mb-10">
                 <img
                   class=""
                   src="~assets/images/icons/tennis.png"
                 >
               </div>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">GRANDI SLAM ATP</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">MASTER 1000 ATP</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">ATP 500 & 250</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">ATP FINALS</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">COPPA DAVIS</span>
-              <span class="py-2 uppercase text-sm">NEXT GEN</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">GRANDI SLAM ATP</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">MASTER 1000 ATP</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">ATP 500 & 250</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">ATP FINALS</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">COPPA DAVIS</span>
+              <span class="py-2 uppercase text-tiny sm:text-sm">NEXT GEN</span>
             </div>
-            <div class="flex flex-1 flex-col text-center mx-4">
-              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto motori-gradient shadow-custom overflow-hidden mb-10">
+            <div class="box-game flex flex-1 flex-col text-center mx-0 sm:mx-4">
+              <div class="flex items-center justify-center p-5 rounded-xl w-20 h-20 sm:w-32 sm:h-32 m-auto motori-gradient shadow-custom overflow-hidden mb-10">
                 <img
                   class=""
                   src="~assets/images/icons/motori.png"
                 >
               </div>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">FORMULA 1</span>
-              <span class="py-2 uppercase text-sm">MOTOGP</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">FORMULA 1</span>
+              <span class="py-2 uppercase text-tiny sm:text-sm">MOTOGP</span>
             </div>
-            <div class="flex flex-1 flex-col text-center">
-              <div class="flex items-center justify-center p-5 rounded-xl w-32 h-32 m-auto baseball-gradient shadow-custom overflow-hidden mb-10">
+            <div class="box-game flex flex-1 flex-col text-center">
+              <div class="flex items-center justify-center p-5 rounded-xl w-20 h-20 sm:w-32 sm:h-32 m-auto baseball-gradient shadow-custom overflow-hidden mb-10">
                 <img
                   class=""
                   src="~assets/images/icons/calcio.png"
                 >
               </div>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">MLB REGULAR SEASON</span>
-              <span class="py-2 border-b border-gray-300 uppercase text-sm">MLB PLAYOFF</span>
-              <span class="py-2 uppercase text-sm">WORLD SERIES</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">MLB REGULAR SEASON</span>
+              <span class="py-2 border-b border-gray-300 uppercase text-tiny sm:text-sm">MLB PLAYOFF</span>
+              <span class="py-2 uppercase text-tiny sm:text-sm">WORLD SERIES</span>
             </div>
           </div>
         </div>
       </div>
     </section>
     <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full">
-      <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-56">
+      <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-40 sm:py-56">
         <div class="flex flex-col">
           <h1 class="text-4xl text-white leading-none">
             THE5MOST
@@ -291,7 +292,6 @@
         :is="currentModal"
         slot="modal-content"
       />
-      <!-- <RegisterModal slot="modal-content" /> -->
     </Modal>
   </div>
 </template>
@@ -369,6 +369,8 @@ export default Vue.extend({
     content: ''
     height: 3px
     @apply bg-green absolute left-0 bottom-0 w-1/5
+    @media (max-width: 450px)
+      @apply hidden
 .section2-bg
   background: linear-gradient(to right, #2980b9, #011458)
 .steps
@@ -379,6 +381,12 @@ export default Vue.extend({
     @apply absolute
   img
     @apply w-20 mb-3
+@media (max-width: 450px)
+  .steps
+    @apply h-auto
+    .step-card
+      min-height: 280px
+      @apply relative
 .calcio-gradient
   background: radial-gradient(#2ed099, #196e51)
 .basket-gradient

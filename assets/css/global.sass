@@ -4,6 +4,8 @@ input:focus
   outline: 0
 body, p
   @apply text-xl
+body, html 
+  @apply overflow-x-hidden
 h1, h2, h3, h4, h5, h6
   font-family: 'Roboto', sans-serif
 .clipped
@@ -16,3 +18,4 @@ h1, h2, h3, h4, h5, h6
   clip-path: polygon(100% 0, 100% 50%, 100% 100%, 0% 100%, 10% 50%, 0% 0%)
 .clipped-x-both
   clip-path: polygon(90% 0%, 100% 50%, 90% 100%, 0% 100%, 10% 50%, 0% 0%)
+@import 'responsive'
