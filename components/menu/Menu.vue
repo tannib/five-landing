@@ -1,27 +1,51 @@
 <template>
-  <div class="nav-menu" :class="{ open: menuOpen }">
-    <div class="menu-backdrop fixed left-0 top-0 w-screen h-screen" @click="openMenu" />
+  <div
+    class="nav-menu"
+    :class="{ open: menuOpen }"
+  >
+    <div
+      class="menu-backdrop fixed left-0 top-0 w-screen h-screen"
+      @click="openMenu"
+    />
     <div class="container fixed left-0 right-0 m-auto z-50">
       <div class="expandable-pentagon" />
-      <div class="menu-toggle" @click="openMenu">
+      <div
+        class="menu-toggle"
+        @click="openMenu"
+      >
         <span class="menu-toggle_icon">&nbsp;</span>
       </div>
       <nav class="navigation__nav">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a id="nav__list--signup" class="navigation__link mb-2">Registrati</a>
+            <a
+              id="nav__list--signup"
+              class="navigation__link mb-2"
+            >Registrati</a>
           </li>
           <li class="navigation__item">
-            <a id="nav__list--login" class="navigation__link mb-2">Login</a>
+            <a
+              id="nav__list--login"
+              class="navigation__link mb-2"
+            >Login</a>
           </li>
           <li class="navigation__item">
-            <a id="nav__list--rules" class="navigation__link mb-2">Regolamento</a>
+            <a
+              id="nav__list--rules"
+              class="navigation__link mb-2"
+            >Regolamento</a>
           </li>
           <li class="navigation__item">
-            <a id="nav__list--faq" class="navigation__link mb-2">FAQ</a>
+            <a
+              id="nav__list--faq"
+              class="navigation__link mb-2"
+            >FAQ</a>
           </li>
           <li class="navigation__item">
-            <a id="nav__list--contacts" class="navigation__link">Contatti</a>
+            <a
+              id="nav__list--contacts"
+              class="navigation__link"
+            >Contatti</a>
           </li>
         </ul>
       </nav>
@@ -78,13 +102,13 @@ export default {
       transition: all .4s
       cursor: pointer
       span
-          margin-right: 1.5rem
-          display: inline-block
+        margin-right: 1.5rem
+        display: inline-block
       &:hover,
       &:active
-          background-position: 100%
-          color: #196e51
-          transform: translateX(1rem)
+        background-position: 100%
+        color: #196e51
+        transform: translateX(1rem)
   .menu-backdrop
     backdrop-filter: blur(10px)
     background-color: rgba(0, 0, 0, 0.8)
@@ -103,6 +127,10 @@ export default {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
     transform: scale(1)
     transform-origin: center
+    @media (max-width: 640px)
+      height: 4rem
+      width: 4rem
+      right: .75rem
   .menu-toggle
     background-color: #196e51
     height: 4.5rem
@@ -141,6 +169,26 @@ export default {
         top: -.6rem
       &::after
         top: .6rem
+    @media (max-width: 640px)
+      height: 2.5rem
+      width: 2.5rem
+      right: 1.5rem
+      &:hover
+        .menu-toggle_icon
+          &::before
+            top: -.3rem
+          &::after
+            top: .3rem
+      .menu-toggle_icon
+        margin-top: 1.25rem
+        &,
+        &::before,
+        &::after
+          width: 1.25rem
+        &::before
+          top: -.3rem
+        &::after
+          top: .3rem
   &.open
     .expandable-pentagon
       transform: scale(20)
@@ -162,4 +210,14 @@ export default {
       &::before
         transform: rotate(135deg)
         top: 0 !important
+      @media (max-width: 640px)
+        margin-top: 1.25rem
+        &,
+        &::before,
+        &::after
+          width: 1.25rem
+        &::before
+          top: -.3rem
+        &::after
+          top: .3rem
 </style>

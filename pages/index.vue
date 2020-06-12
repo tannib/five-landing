@@ -1,18 +1,18 @@
 <template>
   <div class="flex flex-1 flex-col">
     <Menu />
-    <section class="flex flex-col items-center min-h-90 bg-gradient bg-top bg-cover clipped w-full">
+    <section class="flex flex-col items-center min-h-90 bg-gradient bg-top bg-cover clipped w-full px-3 sm:px-0 relative">
       <Header />
       <div class="flex flex-grow flex-row items-center container mx-auto z-10">
-        <div class="flex flex-1 flex-row py-40 items-center">
-          <div class="flex-1 mt-4">
+        <div class="flex flex-1 flex-col sm:flex-row py-32 sm:py-40 items-center">
+          <div class="flex-1 mt-4 text-center sm:text-left mb-8 sm:mb-0">
             <h1 class="text-white text-4xl font-bold mb-5 leading-snug">
               Il primo fanta quotidiano su <br>tutto il mondo dello sport.
             </h1>
             <h3 class="text-white text-base font-light mb-10">
               Schiera nella stessa formazione tutti i più forti atleti al <br>Mondo e gioca gratis per vincere premi ogni giorno.
             </h3>
-            <div class="flex flex-1 content-between">
+            <div class="flex flex-1 justify-center sm:justify-between">
               <button
                 class="min-w-25 bg-green-600 hover:bg-green text-white text-xl font-bold py-3 px-5 rounded"
                 @click="toggleModal('RegisterModal')"
@@ -39,7 +39,7 @@
       </div>
     </section>
     <section class="flex flex-row items-center min-h-75 w-full">
-      <div class="flex px-3 flex-col sm:flex-row container mx-auto py-40">
+      <div class="flex px-3 flex-col sm:flex-row container mx-auto py-32 sm:py-40">
         <div class="flex flex-1 flex-col overflow-hidden text-center sm:text-left mb-16 sm:mb-0">
           <h3 class="text-3xl sm:text-4xl text-green-light font-normal mb-0">
             Cos'è
@@ -51,7 +51,7 @@
             <div class="athlete absolute top-0 m-auto sm:m-0 left-0 right-0">
               <img
                 :key="currentIndex"
-                class="m-auto sm:m-0 w-9/12 sm:w-auto"
+                class="m-auto sm:m-0 h-full sm:w-auto"
                 :src="require(`~/assets/images/player/single_athlete--${currentIndex}.png`)"
               >
             </div>
@@ -75,7 +75,7 @@
       </div>
     </section>
     <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full">
-      <div class="flex px-3 sm:px-0 flex-col flex-grow flex-row items-center container mx-auto justify-center py-40 sm:py-56">
+      <div class="flex px-3 sm:px-0 flex-col flex-grow flex-row items-center container mx-auto justify-center py-32 sm:py-40 sm:py-56">
         <h1 class="mb-16 text-white uppercase text-4xl sm:text-5xl text-center">
           Come si gioca <span class="normal-case">a The5Game</span>?
         </h1>
@@ -356,6 +356,8 @@ export default Vue.extend({
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15)
 .slider
   height: 330px
+  @media (max-width: 450px)
+    height: 220px
 .athlete
   img
     transition: all 1.5s ease

@@ -1,5 +1,5 @@
 <template>
-  <nav class="absolute flex flex-1 flex-row content-between items-center container mx-auto top-0 inset-x-0 py-8 z-40">
+  <nav class="absolute flex flex-1 flex-row content-between items-center container mx-auto top-0 inset-x-0 py-8 z-40 px-3 sm:px-0">
     <Logo />
   </nav>
 </template>
