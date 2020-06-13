@@ -12,7 +12,7 @@
             <h3 class="text-white text-base font-light mb-10">
               Schiera nella stessa formazione tutti i più forti atleti al <br>Mondo e gioca gratis per vincere premi ogni giorno.
             </h3>
-            <div class="flex flex-1 justify-center sm:justify-between">
+            <div class="flex flex-1 justify-center sm:justify-start">
               <button
                 class="min-w-25 bg-green-600 hover:bg-green text-white text-xl font-bold py-3 px-5 rounded"
                 @click="toggleModal('RegisterModal')"
@@ -48,7 +48,7 @@
             THE5GAME?
           </h1>
           <div class="slider relative flex items-center content-center pl-0 sm:pl-6 mb-0 sm:-mb-6">
-            <div class="athlete absolute top-0 m-auto sm:m-0 left-0 right-0">
+            <div class="athlete h-full absolute top-0 m-auto sm:m-0 left-0 right-0">
               <img
                 :key="currentIndex"
                 class="m-auto sm:m-0 h-full sm:w-auto"
@@ -134,7 +134,7 @@
     <section class="flex flex-col sm:flex-row justify-center items-center min-h-75 w-full">
       <div class="flex flex-col container mx-auto py-20 sm:py-40">
         <div class="flex flex-1 flex-col sm:flex-row items-center sm:items-baseline justify-center mb-16">
-          <h1 class="text-6xl font-black leading-tight text-green-600 relative pb-0 sm:pb-5">
+          <h1 class="text-5xl sm:text-6xl font-black leading-tight text-green-600 relative pb-0 sm:pb-5">
             Gli sport
           </h1>
           <h3 class="text-4xl text-green-light font-normal mb-0">
@@ -220,18 +220,18 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full">
+    <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full px-3 sm:px-0">
       <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-40 sm:py-56">
         <div class="flex flex-col">
-          <h1 class="text-4xl text-white leading-none">
+          <h1 class="text-4xl text-white text-center sm:text-left leading-none">
             THE5MOST
           </h1>
-          <h1 class="mb-24 faq-heading text-6xl text-center leading-none">
+          <h1 class="mb-16 sm:mb-24 faq-heading text-5xl sm:text-6xl text-center leading-none">
             Frequently Asked Questions
           </h1>
         </div>
-        <div class="w-full flex flex-row items-start justify-between mb-16">
-          <div class="p-10 bg-white rounded-lg card-shadow">
+        <div class="w-full flex flex-col sm:flex-row items-start justify-between mb-0 sm:mb-16">
+          <div class="p-10 bg-white rounded-lg card-shadow mb-5 sm:mb-0">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               è gratuito giocare a the5game?
             </h3>
@@ -240,7 +240,7 @@
               Per migliorare l'esperienza di gioco sono previsti dei pacchetti premium, ma le funzionalità e le opportunità di vittoria sono le stesse anche in modalità gratuita.
             </p>
           </div>
-          <div class="p-10 bg-white rounded-lg card-shadow mx-24">
+          <div class="p-10 bg-white w-full rounded-lg card-shadow mb-5 sm:mb-0 mx-0 sm:mx-24">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               COME SI GIOCA A THE5GAME?
             </h3>
@@ -249,7 +249,7 @@
               Gli atleti a disposizione variano di giorno in giorno perchè è possibile schierare solamente quelli che scenderanno in campo o in pista quel giorno.
             </p>
           </div>
-          <div class="p-10 bg-white rounded-lg card-shadow">
+          <div class="p-10 bg-white rounded-lg card-shadow mb-5 sm:mb-0">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               COME POSSO COMPORRE LA MIA FORMAZIONE?
             </h3>
@@ -259,8 +259,8 @@
             </p>
           </div>
         </div>
-        <div class="w-full flex flex-row items-start justify-between mb-24">
-          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 mr-8">
+        <div class="w-full flex flex-col sm:flex-row items-start justify-between mb-16 sm:mb-24">
+          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 mb-5 sm:mb-0 mx-0 sm:mr-8">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               COME SI VINCONO I PREMI?
             </h3>
@@ -270,7 +270,7 @@
               L'utente che con i risultati dei suoi quintetti sarà primo in classifica al termine di ogni competizione si porterà a caso l'intero premio.
             </p>
           </div>
-          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 ml-8">
+          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 ml-0 sm:ml-8">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               IN COSA CONSISTONO I PREMI?
             </h3>
@@ -281,7 +281,7 @@
           </div>
         </div>
         <div>
-          <p class="text-white px-32 leading-relaxed">
+          <p class="text-white px-0 sm:px-32 text-center sm:text-left leading-relaxed">
             Per tutti i tuoi ulteriori dubbi su cos'è The5Game, chi può partecipare, come si gioca e quando si vince, ti reindirizziamo <a class="font-bold">alla sezione FAQ</a> dove troverai tutte le risposte che cerchi oppure alla pagina <a class="font-bold">REGOLAMENTO</a>.
           </p>
         </div>
