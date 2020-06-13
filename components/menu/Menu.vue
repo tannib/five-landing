@@ -127,7 +127,7 @@ export default {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
     transform: scale(1)
     transform-origin: center
-    @media (max-width: 980px)
+    @media (max-width: 1024px)
       right: .75rem
     @media (max-width: 640px)
       height: 4rem
@@ -170,7 +170,7 @@ export default {
         top: -.6rem
       &::after
         top: .6rem
-    @media (max-width: 980px)
+    @media (max-width: 1024px)
       right: 1.5rem
     @media (max-width: 640px)
       height: 2.5rem

@@ -6,7 +6,7 @@
       <div class="flex flex-grow flex-row items-center container mx-auto z-10">
         <div class="flex flex-1 flex-col lg:flex-row pt-40 pb-32 lg:pb-40 items-center">
           <div class="flex-1 mt-4 text-center lg:text-left mb-8 lg:mb-0">
-            <h1 class="text-white text-4xl font-bold mb-5 leading-snug">
+            <h1 class="text-white text-3xl sm:text-4xl font-bold mb-5 leading-snug">
               Il primo fanta quotidiano su <br>tutto il mondo dello sport.
             </h1>
             <h3 class="text-white text-base font-light mb-10">
@@ -223,7 +223,7 @@
     <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full px-3 lg:px-0">
       <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-40 lg:py-56">
         <div class="flex flex-col">
-          <h1 class="text-4xl text-white text-center lg:text-left leading-none">
+          <h1 class="text-3xl sm:text-4xl text-white text-center lg:text-left leading-none mb-3 sm:mb-auto">
             THE5MOST
           </h1>
           <h1 class="mb-16 lg:mb-24 faq-heading text-5xl lg:text-6xl text-center leading-none">
@@ -356,7 +356,7 @@ export default Vue.extend({
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15)
 .slider
   height: 330px
-  @media (max-width: 980px)
+  @media (max-width: 1024px)
     height: 220px
   @media (max-width: 640px)
     height: 250px
@@ -373,7 +373,7 @@ export default Vue.extend({
     content: ''
     height: 3px
     @apply bg-green absolute left-0 bottom-0 w-1/5
-    @media (max-width: 980px)
+    @media (max-width: 1024px)
       @apply hidden
 .section2-bg
   background: linear-gradient(to right, #2980b9, #011458)
@@ -385,7 +385,7 @@ export default Vue.extend({
     @apply absolute
   img
     @apply w-20 mb-3
-@media (max-width: 980px)
+@media (max-width: 1024px)
   .steps
     @apply h-auto
     .step-card
