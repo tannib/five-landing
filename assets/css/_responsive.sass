@@ -1,4 +1,4 @@
-@media (max-width: 1024px) 
+@media (max-width: 1023px) 
   html
     font-size: 85%
   button:focus
@@ -21,10 +21,19 @@
 @media (max-width: 640px) 
   button:focus
     outline: 0 !important
+  .vm--modal
+    max-width: 96%
+    left: 0 !important
+    right: 0 !important
+    margin: 0 auto
+  .clipped-double
+    clip-path: polygon(50% 1%, 100% 0, 100% 99%, 50% 100%, 0 99%, 0 0)
 
 @media (max-width: 450px)
   html
     font-size: 80%
+  .text-base
+    font-size: 1.05rem
 
 /* Medium (md) */
 // @media (max-width: 768px) { /* ... */ }

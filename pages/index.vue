@@ -1,26 +1,26 @@
 <template>
   <div class="flex flex-1 flex-col">
     <Menu />
-    <section class="flex flex-col items-center min-h-90 bg-gradient bg-top bg-cover clipped w-full px-3 lg:px-0 relative">
+    <section class="flex flex-col items-center min-h-90 bg-gradient bg-top bg-cover clipped w-full px-3 xl:px-0 relative">
       <Header />
       <div class="flex flex-grow flex-row items-center container mx-auto z-10">
-        <div class="flex flex-1 flex-col lg:flex-row pt-40 pb-32 lg:pb-40 items-center">
-          <div class="flex-1 mt-4 text-center lg:text-left mb-8 lg:mb-0">
+        <div class="flex flex-1 flex-col lg:flex-row pt-48 xl:pt-40 pb-32 lg:pb-40 items-center">
+          <div class="flex-1 mt-4 text-center lg:text-left mb-16 lg:mb-8 lg:mb-0">
             <h1 class="text-white text-3xl sm:text-4xl font-bold mb-5 leading-snug">
               Il primo fanta quotidiano su <br>tutto il mondo dello sport.
             </h1>
             <h3 class="text-white text-base font-light mb-10">
-              Schiera nella stessa formazione tutti i più forti atleti al <br>Mondo e gioca gratis per vincere premi ogni giorno.
+              Schiera nella stessa formazione tutti i più forti atleti al <br class="hidden md:block">Mondo e gioca gratis per vincere premi ogni giorno.
             </h3>
             <div class="flex flex-1 justify-center lg:justify-start">
               <button
-                class="min-w-25 bg-green-600 hover:bg-green text-white text-xl font-bold py-3 px-5 rounded"
+                class="w-32 bg-green-600 hover:bg-green text-white text-xl font-bold py-3 px-5 rounded"
                 @click="toggleModal('RegisterModal')"
               >
                 <a class="signup">Registrati</a>
               </button>
               <button
-                class="min-w-25 bg-transparent hover:bg-white border border-white text-white hover:text-green text-xl font-bold py-3 px-5 rounded ml-5"
+                class="w-32 bg-transparent hover:bg-white border border-white text-white hover:text-green text-xl font-bold py-3 px-5 rounded ml-5"
                 @click="toggleModal('LoginModal')"
               >
                 <a class="login">Login</a>
@@ -30,7 +30,13 @@
           <div class="flex-1">
             <img
               src="~assets/images/mockups/desktop.png"
-              class="w-full"
+              class="w-full hidden md:block"
+              alt="The5Game Desktop"
+              title="The5Game Desktop"
+            >
+            <img
+              src="~assets/images/mockups/iphone.png"
+              class="w-1/2 block md:hidden m-auto"
               alt="The5Game Desktop"
               title="The5Game Desktop"
             >
@@ -75,7 +81,7 @@
       </div>
     </section>
     <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full">
-      <div class="flex px-3 lg:px-0 flex-col flex-grow flex-row items-center container mx-auto justify-center py-32 lg:py-40 lg:py-56">
+      <div class="flex px-3 xl:px-0 flex-col flex-grow flex-row items-center container mx-auto justify-center py-32 lg:py-40 lg:py-56">
         <h1 class="mb-16 text-white uppercase text-4xl lg:text-5xl text-center">
           Come si gioca <span class="normal-case">a The5Game</span>?
         </h1>
@@ -220,7 +226,7 @@
         </div>
       </div>
     </section>
-    <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full px-3 lg:px-0">
+    <section class="flex flex-col items-center min-h-screen section2-bg bg-top bg-cover clipped-double w-full px-3 xl:px-0">
       <div class="flex flex-col flex-grow flex-row items-center container mx-auto justify-center py-40 lg:py-56">
         <div class="flex flex-col">
           <h1 class="text-3xl sm:text-4xl text-white text-center lg:text-left leading-none mb-3 sm:mb-auto">
@@ -231,7 +237,7 @@
           </h1>
         </div>
         <div class="w-full flex flex-col lg:flex-row items-start justify-between mb-0 lg:mb-16">
-          <div class="p-10 bg-white rounded-lg card-shadow mb-5 lg:mb-0">
+          <div class="p-8 xl:p-10 bg-white rounded-lg card-shadow mb-5 lg:mb-0">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               è gratuito giocare a the5game?
             </h3>
@@ -240,7 +246,7 @@
               Per migliorare l'esperienza di gioco sono previsti dei pacchetti premium, ma le funzionalità e le opportunità di vittoria sono le stesse anche in modalità gratuita.
             </p>
           </div>
-          <div class="p-10 bg-white w-full rounded-lg card-shadow mb-5 lg:mb-0 mx-0 lg:mx-24">
+          <div class="p-8 lg:p-10 bg-white w-full rounded-lg card-shadow mb-5 lg:mb-0 mx-0 lg:mx-16 xl:mx-24">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               COME SI GIOCA A THE5GAME?
             </h3>
@@ -249,7 +255,7 @@
               Gli atleti a disposizione variano di giorno in giorno perchè è possibile schierare solamente quelli che scenderanno in campo o in pista quel giorno.
             </p>
           </div>
-          <div class="p-10 bg-white rounded-lg card-shadow mb-5 lg:mb-0">
+          <div class="p-8 lg:p-10 bg-white rounded-lg card-shadow mb-5 lg:mb-0">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               COME POSSO COMPORRE LA MIA FORMAZIONE?
             </h3>
@@ -260,7 +266,7 @@
           </div>
         </div>
         <div class="w-full flex flex-col lg:flex-row items-start justify-between mb-16 lg:mb-24">
-          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 mb-5 lg:mb-0 mx-0 lg:mr-8">
+          <div class="p-8 lg:p-10 bg-white rounded-lg card-shadow h-2/4 mb-5 lg:mb-0 mx-0 lg:mr-8">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               COME SI VINCONO I PREMI?
             </h3>
@@ -270,7 +276,7 @@
               L'utente che con i risultati dei suoi quintetti sarà primo in classifica al termine di ogni competizione si porterà a caso l'intero premio.
             </p>
           </div>
-          <div class="p-10 bg-white rounded-lg card-shadow h-2/4 ml-0 lg:ml-8">
+          <div class="p-8 lg:p-10 bg-white rounded-lg card-shadow h-2/4 ml-0 lg:ml-8">
             <h3 class="uppercase mb-3 font-bold text-dark-blue">
               IN COSA CONSISTONO I PREMI?
             </h3>
@@ -281,7 +287,7 @@
           </div>
         </div>
         <div>
-          <p class="text-white px-0 lg:px-32 text-center lg:text-left leading-relaxed">
+          <p class="text-base sm:text-xl text-white px-0 lg:px-32 text-center lg:text-left leading-relaxed">
             Per tutti i tuoi ulteriori dubbi su cos'è The5Game, chi può partecipare, come si gioca e quando si vince, ti reindirizziamo <a class="font-bold">alla sezione FAQ</a> dove troverai tutte le risposte che cerchi oppure alla pagina <a class="font-bold">REGOLAMENTO</a>.
           </p>
         </div>
@@ -356,10 +362,10 @@ export default Vue.extend({
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.15)
 .slider
   height: 330px
-  @media (max-width: 1024px)
+  @media (max-width: 1023px)
     height: 220px
   @media (max-width: 640px)
-    height: 250px
+    height: 180px
 .athlete
   img
     transition: all 1.5s ease
@@ -373,7 +379,7 @@ export default Vue.extend({
     content: ''
     height: 3px
     @apply bg-green absolute left-0 bottom-0 w-1/5
-    @media (max-width: 1024px)
+    @media (max-width: 1023px)
       @apply hidden
 .section2-bg
   background: linear-gradient(to right, #2980b9, #011458)
@@ -385,7 +391,7 @@ export default Vue.extend({
     @apply absolute
   img
     @apply w-20 mb-3
-@media (max-width: 1024px)
+@media (max-width: 1023px)
   .steps
     @apply h-auto
     .step-card

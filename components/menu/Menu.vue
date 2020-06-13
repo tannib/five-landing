@@ -89,6 +89,8 @@ export default {
     transition: opacity 0.8s cubic-bezier(0.68, -0.55, 0.265, 1.55)
     transition-delay: .2s
     opacity: 0
+    @media (max-width: 1023px)
+      @apply text-center left-0
     .navigation__link
       display: inline-block
       font-size: 2.5rem
@@ -127,7 +129,7 @@ export default {
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.1)
     transform: scale(1)
     transform-origin: center
-    @media (max-width: 1024px)
+    @media (max-width: 1023px)
       right: .75rem
     @media (max-width: 640px)
       height: 4rem
@@ -170,27 +172,29 @@ export default {
         top: -.6rem
       &::after
         top: .6rem
-    @media (max-width: 1024px)
+    @media (max-width: 1023px)
       right: 1.5rem
     @media (max-width: 640px)
-      height: 2.5rem
-      width: 2.5rem
+      height: 3rem
+      width: 3rem
+      top: 2.5rem
+      right: 1.25rem
       &:hover
         .menu-toggle_icon
           &::before
-            top: -.3rem
+            top: -.4rem
           &::after
-            top: .3rem
+            top: .4rem
       .menu-toggle_icon
-        margin-top: 1.25rem
+        margin-top: 1.5rem
         &,
         &::before,
         &::after
-          width: 1.25rem
+          width: 1.5rem
         &::before
-          top: -.3rem
+          top: -.4rem
         &::after
-          top: .3rem
+          top: .4rem
   &.open
     .expandable-pentagon
       transform: scale(25)
@@ -215,13 +219,13 @@ export default {
         transform: rotate(135deg)
         top: 0 !important
       @media (max-width: 640px)
-        margin-top: 1.25rem
+        margin-top: 1.5rem
         &,
         &::before,
         &::after
-          width: 1.25rem
+          width: 1.55rem
         &::before
-          top: -.3rem
+          top: -.4rem
         &::after
-          top: .3rem
+          top: .4rem
 </style>
