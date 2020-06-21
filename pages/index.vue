@@ -293,12 +293,12 @@
         </div>
       </div>
     </section>
-    <Modal>
+    <CommonModal>
       <component
         :is="currentModal"
         slot="modal-content"
       />
-    </Modal>
+    </CommonModal>
   </div>
 </template>
 
@@ -308,7 +308,7 @@ import { timer } from 'rxjs'
 import { mapGetters } from 'vuex'
 import Header from '~/components/header/Header.vue'
 import Menu from '~/components/menu/Menu.vue'
-import Modal from '~/components/modals/common.modal.vue'
+import CommonModal from '~/components/modals/common.modal.vue'
 import RegisterModal from '~/components/modals/register.modal.vue'
 import LoginModal from '~/components/modals/login.modal.vue'
 
@@ -316,14 +316,14 @@ export default Vue.extend({
   components: {
     Header,
     Menu,
-    Modal,
+    CommonModal,
     RegisterModal,
     LoginModal
   },
   data () {
     return {
       currentIndex: (1 as number),
-      currentModal: 'RegisterModal'
+      currentModal: ''
     }
   },
   computed: {
