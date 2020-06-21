@@ -23,7 +23,7 @@ export default {
   ** Global CSS
   */
   css: [
-    'vue-js-modal/dist/styles.css',
+    // 'vue-js-modal/dist/styles.css',
     '@/assets/css/global.sass'
   ],
   /*
