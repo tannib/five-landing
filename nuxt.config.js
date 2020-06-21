@@ -23,14 +23,14 @@ export default {
   ** Global CSS
   */
   css: [
-    // 'vue-js-modal/dist/styles.css',
+    'vue-js-modal/dist/styles.css',
     '@/assets/css/global.sass'
   ],
   /*
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '@/plugins/vue-js-modal', ssr: false }
+    { src: '~plugins/vue-js-modal', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -59,10 +59,19 @@ export default {
   ** Build configuration
   */
   build: {
-    /*
-    ** You can extend webpack config here
-    */
-    extend () {}
-    // extractCSS: true
+    extend () {},
+    extractCSS: true,
+    optimization: {
+      splitChunks: {
+        cacheGroups: {
+          styles: {
+            name: 'styles',
+            test: /\.(css|vue)$/,
+            chunks: 'all',
+            enforce: true
+          }
+        }
+      }
+    }
   }
 }
