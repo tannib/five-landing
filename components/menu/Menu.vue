@@ -21,12 +21,14 @@
             <a
               id="nav__list--signup"
               class="navigation__link mb-2"
+              @click="toggleModal('RegisterModal')"
             >Registrati</a>
           </li>
           <li class="navigation__item">
             <a
               id="nav__list--login"
               class="navigation__link mb-2"
+              @click="toggleModal('LoginModal')"
             >Login</a>
           </li>
           <li class="navigation__item">
@@ -73,6 +75,12 @@ export default {
   methods: {
     openMenu () {
       this.menuOpen = !this.menuOpen
+    },
+    toggleModal (type) {
+      this.openMenu()
+      setTimeout(() => {
+        this.$store.commit('modal/toggleModal', { type, open: true })
+      }, 500)
     }
   }
 }

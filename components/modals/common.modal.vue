@@ -3,6 +3,8 @@
     name="common-modal"
     width="450"
     height="auto"
+    adaptive="true"
+    scrollable="true"
     @closed="onModalClose"
   >
     <div class="modal-wrapper pb-8 pt-12 px-8 relative text-center">
