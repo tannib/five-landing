@@ -30,7 +30,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '@/plugins/vue-js-modal', ssr: false }
+    { src: '@/plugins/vue-js-modal', ssr: false },
+    { src: '@/plugins/wow', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

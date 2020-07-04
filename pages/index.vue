@@ -58,6 +58,8 @@
               <img
                 :key="currentIndex"
                 class="m-auto lg:m-0 h-full lg:w-auto"
+                data-aos="fade-in"
+                data-aos-duration="2000"
                 :src="require(`~/assets/images/player/single_athlete--${currentIndex}.png`)"
               >
             </div>
