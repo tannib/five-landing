@@ -90,7 +90,9 @@ export default {
     transition-delay: .2s
     opacity: 0
     @media (max-width: 1023px)
-      @apply text-center left-0
+      @apply text-right left-0
+    @media (max-width: 640px)
+      @apply text-center
     .navigation__link
       display: inline-block
       font-size: 2.5rem
@@ -197,7 +199,7 @@ export default {
           top: .4rem
   &.open
     .expandable-pentagon
-      transform: scale(25)
+      transform: scale(15)
       @media (max-width: 640px)
         transform: scale(40)
     .menu-backdrop
